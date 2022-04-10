@@ -5,8 +5,8 @@ import 'antd/dist/antd.css'
 import {HeaderPanel} from "./Layot/HeaderPanel";
 import {FormPanel} from "./Layot/FormPanel";
 import Continut from "./Layot/Continut";
-import {Content, Footer, Header} from "antd/es/layout/layout";
-import {Breadcrumb, Layout, Menu} from "antd";
+import { Footer} from "antd/es/layout/layout";
+import {Layout} from "antd";
 
 function App() {
     return (
