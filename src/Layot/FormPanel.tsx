@@ -7,7 +7,7 @@ export const FormPanel =() =>{
     const[Studile,setStudile]=useState('')
     const[anii,setanii]=useState('')
 
-    const ShowResult =()=>{
+    const Finall =()=>{
         alert("Message:"+message+"\n"+"Newuser:"+newuser+"\n"+"Studile:"+Studile+"\n"+"Anii:"+anii)
         console.log("Message:"+message+"\n"+"Newuser:"+newuser+"\n"+"Studile:"+Studile+"\n"+"Anii:"+anii)
     }
@@ -44,7 +44,7 @@ export const FormPanel =() =>{
             <Form.Item label=" ">
 
                 <Button
-                        onClick={ShowResult}  type="primary" htmlType="submit">
+                        onClick={Finall}  type="primary" htmlType="submit">
                     Submit
                 </Button>
 
