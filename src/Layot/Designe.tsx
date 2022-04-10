@@ -1,6 +1,6 @@
 import { Card, Col } from 'antd'
 
-function Designe({title, content}) {
+function Designe({title, content}:{title:string,content:string}) {
 
     return (
 

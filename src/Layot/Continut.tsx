@@ -5,18 +5,18 @@ const content = [
     {
         id: 1,
         title: "Card title 1",
-        content: "description"
+        content: "content"
     },
     {
         id: 2,
         title: "Card title 2",
-        content: "description"
+        content: "content"
     }
     ,
     {
         id: 3,
         title: "Card title 3",
-        content: "description"
+        content: "content"
     }
 ]
 
