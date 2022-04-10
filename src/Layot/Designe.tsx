@@ -1,18 +1,27 @@
-import { Card, Col } from 'antd'
+import {Card, Checkbox, Col, Input} from 'antd'
+import {observer} from "mobx-react-lite";
+import {IContentModel} from "../interfaces/interface";
+import {useEffect} from "react";
 
-function Designe({title, content}:{title:string,content:string}) {
+export const Designe=observer(({content}:{content:IContentModel}) => {
+    const {title,contents,notes,changeNotes,isSeen,changeSeen,seen} =content
+    useEffect(()=>{
+        if(isSeen) {
+            alert(`Ati apasat pe --> ${ title }`)
+        }
+    },[isSeen])
 
     return (
 
-        <Col span={8}>
-            <div style={{ paddingBottom: '8px',paddingTop:'8px'}}>
-                <Card title={title} bordered={false}>
-                    {content}
-                </Card>
-            </div>
-        </Col>
+        <Card title={title} bordered={false}>
+            {contents}
+            <Input value={notes}
+                   placeholder={notes}
+                   onChange={(e)=>changeNotes(e.target.value)}
+            />
+            <Checkbox defaultChecked={ seen } checked={seen} onChange={(e)=>changeSeen(e.target.checked)}/>
+
+        </Card>
 
     )
-}
-
-export default Designe
+})
