@@ -1,6 +1,7 @@
 import {Instance} from "mobx-state-tree";
-import RootStore from "../Mst/Stores/RootStore.store";
-import {ContentModel} from "../Mst/Models/Content.model";
+import RootStore from "../StoreModels/Stores/RootStore.store";
+import {ContentModel} from "../StoreModels/Models/Content.model";
+
 
 export  interface  IRootStore extends  Instance<typeof RootStore>{
 

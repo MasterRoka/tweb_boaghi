@@ -3,7 +3,7 @@ import {types} from "mobx-state-tree";
 export const  ContentModel = types.model('ContentModel',{
     id:types.identifier,
     title:'',
-    content:'',
+    contents:'',
     seen:false,
     notes:'',
 })

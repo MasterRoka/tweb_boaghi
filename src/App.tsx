@@ -15,7 +15,7 @@ function App() {
             <div>
                 <Continut/>
             </div>
-            <FormPanel/>
+            {/*<FormPanel/>*/}
             <Footer>Boaghi Petru</Footer>
         </Layout>
     );
